@@ -42,22 +42,29 @@ git status
 
 ### To ignore some files or folders from uploading in git write those file/folder names in `.gitignore` file.
 
-### To check all version maintained by git
-```
-git log
-```
+---
 
 ### To create version/commit of all changes by git
 ```
 git commit -m "custom message"
 ```
 
-### To send version/changes to github
+### To check all version maintained by git
 ```
-git push origin main
+git log
 ```
 
 ### To check remote url
 ```
 git remote -v
+```
+
+### To check branches available at git
+```
+git branch
+```
+
+### To send version/changes to github
+```
+git push origin main
 ```
