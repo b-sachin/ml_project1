@@ -116,6 +116,11 @@ docker stop <CONTAINER_ID>
 ```
 
 
+### To setup and install all requirements without using pip install
+```
+python setup.py install
+```
+
 
 
 
