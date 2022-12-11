@@ -121,7 +121,10 @@ docker stop <CONTAINER_ID>
 python setup.py install
 ```
 
-
+### To run jupyter notebook file in VScode, we need to install `ipykernal`  
+```
+pip install ipykernel
+```
 
 
 
