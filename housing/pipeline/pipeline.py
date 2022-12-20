@@ -2,7 +2,6 @@ from housing.config.configuration import Configuration
 from housing.logger import logging
 from housing.exception import HousingException
 from housing.entity.artifact_entity import DataIngestionArtifact
-from housing.entity.config_entity import DataIngestionConfig
 from housing.component.data_ingestion import DataIngestion
 
 import os, sys
@@ -39,7 +38,7 @@ class Pipeline:
     def start_model_pusher(self):
         pass
 
-    def runpipeline(self):
+    def run_pipeline(self):
         try:
             # data ingestion
             data_ingestion_artifact = self.start_data_ingestion()
