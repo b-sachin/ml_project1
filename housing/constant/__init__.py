@@ -32,9 +32,15 @@ DATA_INGESTION_INGESTED_TEST_DIR_KEY = "ingested_test_dir"
 DATA_VALIDATION_CONFIG_KEY = "data_validation_config"
 DATA_VALIDATION_SCHEMA_DIR_KEY = "schema_dir"
 DATA_VALIDATION_SCHEMA_FILE_NAME_KEY = "schema_file_name"
+DATA_VALIDATION_ARTIFACT_DIR_NAME = "data_validation"
 DATA_VALIDATION_REPORT_FILE_NAME = "report_file_name"
 DATA_VALIDATION_REPORT_PAGE_FILE_NAME_KEY = "report_page_file_name"
 
+# Dataset Schema related variables
+
+DATASET_SCHEMA_COLUMNS = "columns"
+DATASET_SCHEMA_TARGET_COLUMN = "target_column"
+DATASET_SCHEMA_DOMAIN_VALUE = "domain_value"
 
 # Data Transformation related variable
 
