@@ -11,8 +11,8 @@ CONFIG_FILE_PATH = os.path.join(ROOT_DIR,CONFIG_DIR,CONFIG_FILE_NAME)
 CURRENT_TIME_STAMP = f"{datetime.now().strftime('%Y-%m-%d-%H-%M-%S')}"
 
 # Training pipeline related variable
-TRAINING_PIPELINE_CONFIG_KEY = 'training_pipeline_config'
-TRAINING_PIPELINE_ARTIFACT_DIR_KEY = 'artifact_dir'
+TRAINING_PIPELINE_CONFIG_KEY = "training_pipeline_config"
+TRAINING_PIPELINE_ARTIFACT_DIR_KEY = "artifact_dir"
 TRAINING_PIPELINE_NAME = "pipeline_name"
 
 # Data Ingestion related variable
@@ -44,6 +44,7 @@ DATASET_SCHEMA_DOMAIN_VALUE = "domain_value"
 
 # Data Transformation related variable
 
+DATA_TRANSFORMATION_ARTIFACT_DIR = "data_transformation"
 DATA_TRANSFORMATION_CONFIG_KEY = "data_transformation_config"
 DATA_TRANSFORMATION_ADD_BEDROOM_PER_ROOM_KEY = "add_bedroom_per_room"
 DATA_TRANSFORMATION_TRANSFORMED_DIR_KEY = "transformed_dir"
