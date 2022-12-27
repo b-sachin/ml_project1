@@ -41,6 +41,8 @@ DATA_VALIDATION_REPORT_PAGE_FILE_NAME_KEY = "report_page_file_name"
 DATASET_SCHEMA_COLUMNS = "columns"
 DATASET_SCHEMA_TARGET_COLUMN = "target_column"
 DATASET_SCHEMA_DOMAIN_VALUE = "domain_value"
+DATASET_SCHEMA_NUMERICAL_COLUMN = "numerical_column"
+DATASET_SCHEMA_CATEGORICAL_COLUMN = "categorical_column"
 
 # Data Transformation related variable
 
@@ -52,3 +54,8 @@ DATA_TRANSFORMATION_TRANSFORMED_TRAIN_DIR_KEY  = "transformed_train_dir"
 DATA_TRANSFORMATION_TRANSFORMED_TEST_DIR_KEY = "transformed_test_dir"
 DATA_TRANSFORMATION_PREPROCESSING_DIR_KEY = "preprocessing_dir"
 DATA_TRANSFORMATION__PREPROCESSED_OBJECT_FILE_NAME_KEY = "preprocessed_object_file_name"
+
+COLUMN_TOTAL_ROOMS = "total_rooms"
+COLUMN_POPULATION = "population"
+COLUMN_HOUSEHOLDS = "households"
+COLUMN_TOTAL_BEDROOM = "total_bedrooms"
