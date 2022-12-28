@@ -49,7 +49,7 @@ def save_numpy_array_data(file_path:str, array:np.array):
     """
     try:
         dir_path = os.path.dirname(file_path)
-        os.mkdirs(dir_path, exist_ok = True)
+        os.makedirs(dir_path, exist_ok = True)
         with open(file_path,"wb") as file_obj:
             np.save(file_obj,array)
     except Exception as e:
@@ -75,11 +75,12 @@ def save_preprocessing_obj(file_path:str, obj):
     """
     try:
         dir_path = os.path.dirname(file_path)
-        os.mkdirs(dir_path, exist_ok = True)
+        os.makedirs(dir_path, exist_ok = True)
         with open(file_path,"wb") as file_obj:
-            dill.dump(file_obj,obj)
+            dill.dump(obj,file_obj)
     except Exception as e:
         raise HousingException(e,sys) from e
+
 
 def load_preprocessing_obj(file_path:str):
     """

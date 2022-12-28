@@ -92,11 +92,14 @@ class DataValidation:
             logging.info(f"checking the values of 'ocean proximity' column of Schema Dataset with Training and Testing Dataset")
             
             domain_values_match = False
+            domain_value_colums = schema_info[DATASET_SCHEMA_DOMAIN_VALUE]
             
-            schema_column_domain_values = list(schema_info[DATASET_SCHEMA_DOMAIN_VALUE].values())[0]
+            schema_column_domain_values = list(domain_value_colums.values())[0]
 
-            train_column_domain_values = list(set(train_data_frame[DATASET_SCHEMA_DOMAIN_VALUE]))
-            test_column_domain_values = list(set(test_data_frame[DATASET_SCHEMA_DOMAIN_VALUE]))
+            
+
+            train_column_domain_values = list(set(train_data_frame[domain_value_colums]))
+            test_column_domain_values = list(set(test_data_frame[domain_value_colums]))
 
             if (train_column_domain_values.sort() == schema_column_domain_values.sort()) and (test_column_domain_values.sort() == schema_column_domain_values.sort()):
                 domain_values_match = True
@@ -123,7 +126,7 @@ class DataValidation:
                 raise Exception(f"Training Dataset Column names: {train_column_list.sort()} or Testing Dataset Column names: {test_column_list.sort()} does not match with Schema Column names: {schema_columns_list.sort()}")
 
 
-            validation_status = all(is_column_count_match, domain_values_match, all_column_names_match)
+            validation_status = all([is_column_count_match, domain_values_match, all_column_names_match])
             
             logging.info(f"is dataset schema validation successful -> {validation_status}")
             return validation_status
@@ -192,4 +195,4 @@ class DataValidation:
 
 
     def __del__(self):
-    logging.info(f"{'='*20}Data Validation log Completed. {'='*20} \n\n")
+        logging.info(f"{'='*20}Data Validation log Completed. {'='*20} \n\n")
